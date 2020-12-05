@@ -1,0 +1,236 @@
+section#section_edit, section#section_create{
+  background-repeat: repeat-y;
+  background-repeat: repeat-x;
+  background-repeat-y: repeat;
+  width: 100%;
+  background-attachment: fixed;
+        h1{font-size: 22px;}
+        h2{font-size: 20px;}
+}
+
+
+section#section{
+
+  #chart-prev{    
+    cursor:pointer;
+     position: absolute;
+      top:100%;
+      left:0;
+       z-index:3;     
+  }
+
+  #chart-next{    
+    cursor:pointer;
+     position: absolute;
+      top:100%;
+      right:0;
+       z-index:3;
+  }
+
+  #chart-prev>i, #chart-next>i{
+    color:grey;
+    font-size:30px;
+    transition: all 0.3s; 
+
+        &:hover{
+          color:#fc3c60;
+        }
+  }
+}
+
+
+
+
+section#section_show {
+      padding-top: 80px;
+
+        h1{
+          font-size: 22px;
+        }
+        h2{
+          font-size: 20px; 
+          padding-right: 15px;
+        }
+
+      .card-header{
+        color:white;
+        background: linear-gradient(0.25turn, #ff264d, #ff5170,#fb768e);
+        border-color: 2px solid rgba(255, 81, 112,1);
+        background-color: rgba(255, 81, 112,1);
+        filter: drop-shadow(0px 2px 6px rgba(108, 117, 125,0.65));
+      }
+
+      .apartment-services-list, .apartment-info {
+        padding-bottom: 5px;
+
+        border-bottom: 1px solid rgba(255, 81, 112,1);
+      }
+
+      li{
+        border-radius: 3px;
+      }
+
+
+    }
+
+
+  section#section_home{
+
+
+                #my_dashboard{                 
+                  border-radius: 5px;
+                  margin-top: 120px;
+                  margin-bottom: 80px;
+                  filter: drop-shadow(0px -2px 7px rgba(108, 117, 125,0.85));
+
+                  .card-header{
+                    color:white;
+                    background: linear-gradient(0.25turn, #ff264d, #ff5170,#fb768e);
+                    border:1px solid #ff264d;
+                  }
+
+                  .card-body{
+                    padding:20px 0px;
+                    background-color: white;
+                  }
+                }
+
+              .sponsorship.card{
+                position: relative;
+                width: 360px;      
+                height: 280px;
+                overflow: hidden;
+                filter: drop-shadow(-2px 8px 7px rgba(108, 117, 125,0.85));
+                transition: all 0.3s ;
+                border:none;
+
+                          &:hover{
+                            transform: scale(1.01);                            
+                          }
+              }
+
+              .card-body{
+                position: relative;
+                padding: 0;
+              }
+
+              .spons-card{
+                width:100%;
+                position: absolute;
+                z-index: 2;
+                bottom:0;
+                padding: 5px 10px 5px 10px;
+                filter: drop-shadow(0px -2px 7px rgba(108, 117, 125,0.85));
+                background-color: rgba(255, 255, 255, 0.85);
+              }  
+
+                .carousel-images.dim.spons{
+                  position: absolute;
+                  width:100%;
+
+
+                  &>img{
+                    width:100%;
+                    max-height: 280px;
+                  }
+                }       
+
+              .sponsored-label {
+              border-top: 3px solid transparent;
+              border-right: 100px solid #FF5170;
+              border-bottom: 95px solid transparent;
+              position: absolute;
+              top: -14px;
+              right: -2px;
+              transform: rotate(1deg);
+                z-index: 4;
+                filter: drop-shadow(0 2px 5px rgba(255, 81, 112,0.85));
+              }
+
+              .sponsortext{
+                transform: rotate(45deg);
+                position: absolute;
+                top: 25px;
+                top: 20px;
+                right: -4px;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                z-index: 5;
+              }
+
+  }
+
+  section#section_user_apartment_list{
+    background-position:0 0;
+    padding-top:80px;
+    width:100%;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat-y: repeat;
+
+      h2{
+        background: linear-gradient(0.25turn, #ff264d, #ff5170,#fb768e);
+        color:white;
+      }
+
+
+    .previous-page{
+      top:120px;
+    }
+
+
+
+    .mycarousel.list{
+
+          min-width:240px;
+          max-height: 140px;
+
+          .carousel-images{
+            width:100%;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50% , -50%);
+            overflow: hidden;
+            transition: all 0.2s;
+            margin-top: 15px;
+              & > img {
+                width:100%;
+                height:auto;
+              }
+            }
+          }
+}
+// Braintree view
+  section#sponsorship {
+
+    background-position:0 0;
+    padding-top:80px;
+    width:100%;
+    h1{font-size: 22px; margin-top:15px;}
+    h2{font-size: 20px}
+    line-height: 2;
+
+  }
+
+  @media all and (max-width: 993px) {
+
+
+  section#section_user_apartment_list{
+
+
+              .mycarousel.list{
+
+                height:180px;
+
+                .carousel-container{
+                  height: 146px;
+                  position: relative;
+                  overflow: hidden;
+                }
+
+              }
+            }
+
+    }
